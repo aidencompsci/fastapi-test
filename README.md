@@ -8,3 +8,10 @@ but it works?
 I haven't tested this on very many cases at all, obviously I only wrote a function for get, but presumably
 you could also write one for the other standard http methods. Get's are the easiest because you don't 'often' do much
 deserializing from a git body itself. 
+
+### Required Libraries
+`pip install fastapi "uvicorn[standard]" aiohttp`
+
+
+### How to Run
+`uvicorn main:api` add `--reload` to watch for file changes and reload
